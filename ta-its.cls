@@ -198,15 +198,18 @@
 \newpage%
     \newgeometry{top=7cm,left=2cm,bottom=2cm}%
     \sffamily%
-    \thispagestyle{empty}%
+    \pagestyle{empty}%
     \color{white}%
     { \noindent TUGAS AKHIR - \kodeTA }\\*[10pt]%
     {\large\textbf{\MakeUppercase{\judul}}} \\*[32pt]%
     \MakeUppercase{\penulis} \\*%
     NRP \nrp \\*[10pt]%
-    Dosen Pembimbing \\*%
-    \pembimbingSatu \\
-    \ifdef{\pembimbingDua}{\pembimbingDua}{} \\*[10pt]%
+    Dosen Pembimbing I\\*%
+    \pembimbingSatu \\*[10pt]%
+    \ifdef{\pembimbingDua}{
+	Dosen Pembimbing II\\*%
+	\pembimbingDua\\*[10pt]%
+	}{}
     JURUSAN \MakeUppercase{\jurusan} \\*%
     Fakultas \fakultas \\*%
     Institut Teknologi Sepuluh Nopember \\*%
@@ -216,8 +219,9 @@
     \normalsize%
     \restoregeometry%
     \color{black}%
-    \cleardoublepage%
+    \newpage\null%
 \newpage%
+\frontmatter%
     \newgeometry{top=7cm,left=2cm,bottom=2cm}%
     \sffamily%
     \thispagestyle{empty}%
@@ -225,9 +229,12 @@
     {\large\textbf{\MakeUppercase{\judul}}} \\*[32pt]%
     \MakeUppercase{\penulis} \\*%
     NRP \nrp \\*[10pt]%
-    Dosen Pembimbing\\*%
-    \pembimbingSatu \\%
-    \ifdef{\pembimbingDua}{\pembimbingDua}{} \\*[10pt]%
+    Dosen Pembimbing I\\*%
+    \pembimbingSatu \\*[10pt]%
+    \ifdef{\pembimbingDua}{
+	Dosen Pembimbing II\\*%
+	\pembimbingDua\\*[10pt]%
+	}{}
     JURUSAN \MakeUppercase{\jurusan} \\*%
     Fakultas \fakultas \\*%
     Institut Teknologi Sepuluh Nopember \\*%
@@ -245,10 +252,13 @@
     {\large\textbf{\MakeUppercase{\judulEnglish}}} \\*[32pt]%
     \MakeUppercase{\penulis} \\*%
     NRP \nrp \\*[10pt]%
-    Supervisor \\*%
+    Supervisor I\\*%
     \pembimbingSatu \\*[10pt]%
-    \ifdef{\pembimbingDua}{\pembimbingDua}{} \\*[10pt]%
-    Department of \MakeUppercase{\jurusanEnglish} \\*%
+    \ifdef{\pembimbingDua}{
+	Supervisor II\\*%
+	\pembimbingDua\\*[10pt]%
+	}{}
+    \MakeUppercase{Department of \jurusanEnglish} \\*%
     Faculty of \fakultasEnglish \\*%
     Institut Teknologi Sepuluh Nopember \\*%
     Surabaya, \tahun \\*%
