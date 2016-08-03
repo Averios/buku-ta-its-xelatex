@@ -319,7 +319,7 @@ Pembimbing I  & : \pembimbingSatu
 \end{tabular}
 \\*[20pt]
 \begin{centering}
-\textbf{Abstrak} \\*[11pt]%
+\textit{\textbf{Abstrak}} \\*[11pt]%
 \end{centering}
 }{}
 
@@ -340,8 +340,9 @@ Supervisor I  & : \pembimbingSatu
 \end{tabular}
 \\*[20pt]
 \begin{centering}
-\textbf{Abstract} \\*[11pt]%
+\textit{\textbf{Abstract}} \\*[11pt]%
 \end{centering}
+\itshape
 }{}
 
 \endinput
