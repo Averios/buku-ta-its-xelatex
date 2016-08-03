@@ -51,6 +51,9 @@
 	\@mainmattertrue
 	\pagestyle{main}
 	\pagenumbering{arabic}}
+
+\renewcommand\backmatter{%
+  \@mainmatterfalse}
 \makeatother
 
 \RequirePackage[hypcap=true]{caption}
