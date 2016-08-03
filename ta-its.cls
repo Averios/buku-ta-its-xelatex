@@ -21,7 +21,7 @@
     \preto\longtable{\setcounter{magicrownumbers}{0}}
     \preto\tabularx{\setcounter{magicrownumbers}{0}}
     \preto\tabulary{\setcounter{magicrownumbers}{0}}
-    \newcounter{magicrownumbers}
+    \newcounter{magicrownumbers}[table]
     \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
 
 \RequirePackage{setspace}
